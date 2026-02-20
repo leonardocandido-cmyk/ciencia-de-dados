@@ -19,3 +19,17 @@ faturamento = [200000, 320000, 500000]
 plt.bar(celulares, faturamento)
 plt.show()
 plt.savefig('./exercicios/ex02.png')
+
+# 3) Identifique na turma qual é o time de cada um e construa um gráfico de barras para mostrar a popularidade cada time
+# Grêmio: 3; Flamengo: 2; Palmeiras: 1; Internacional: 2; Vasco: 1
+plt.clf()
+
+times = ['Grêmio', 'Flamengo', 'Palmeiras', 'Internacional', 'Vasco']
+torcedores = [3, 2, 1, 2, 1]
+cores = ['#0084ff', '#C52613', '#006437', '#E5050F', 'black']
+
+plt.bar(times, torcedores, color=cores)
+plt.xlabel('Times do campeonato brasileiro')
+plt.ylabel('N° de torcedores')
+plt.show()
+plt.savefig('./exercicios/ex03.png')
